@@ -1,0 +1,46 @@
+@import "mixins";
+$border: 6px solid;
+
+.secondary__nav {
+  height: 53px;
+  background-color: #4d4382;
+  .secondary {
+    height: 53px;
+    display: flex;
+  }
+  .container-top {
+    @include container;
+  }
+  .nav-links {
+    @include BitterBold;
+    display: flex;
+    text-transform: uppercase;
+    padding-left: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 22px;
+    justify-content: space-around;
+    width: 60%;
+    padding-top: 10px;
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px 16px 20px;
+    }
+    .business {
+      border-bottom: $border $business;
+    }
+    .sport {
+      border-bottom: $border $sport;
+    }
+    .life {
+      border-bottom: $border $life;
+    }
+    .tech {
+      border-bottom: $border $tech;
+    }
+    .travel {
+      border-bottom: $border $travel;
+    }
+  }
+}

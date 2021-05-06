@@ -1,0 +1,63 @@
+@import "mixins";
+
+.container {
+  @include container;
+  .banner {
+    margin: 18px auto;
+    width: 940px;
+    height: 120px;
+    border: 1px solid #d7d7d7;
+  }
+  .slider-img {
+    width: 940px;
+    height: 425px;
+    background-image: url("../assets/sliderimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .gradient {
+      padding-top: 61px;
+      padding-left: 30px;
+      position: absolute;
+      width: 940px;
+      height: 240px;
+      bottom: 0;
+      background-image: url("../assets/gradient.png");
+      color: white;
+      .text {
+        width: 588px;
+        height: 113px;
+        .top-text {
+          @include VarelaRound;
+          display: flex;
+          font-size: 12px;
+          line-height: 14.5px;
+          .date {
+            padding-right: 32px;
+          }
+          img {
+            padding-right: 6px;
+            padding-top: 1.5px;
+          }
+        }
+        h1 {
+          @include BitterBold;
+          padding-top: 5px;
+          font-size: 34px;
+          line-height: 41px;
+        }
+      }
+      button {
+        @include VarelaRound;
+        cursor: pointer;
+        border: 1px solid white;
+        color: white;
+        width: 123px;
+        height: 33px;
+        padding: 0;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}

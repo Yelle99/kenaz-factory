@@ -1,0 +1,14 @@
+@mixin container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@mixin BitterBold {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+}
+
+@mixin VarelaRound {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+}
