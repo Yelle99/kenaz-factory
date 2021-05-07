@@ -14,4 +14,8 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(240, 240, 240);
+}
 </style>

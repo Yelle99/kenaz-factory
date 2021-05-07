@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <div class="banner"></div>
+  <div class="slider-container">
     <VueSlickCarousel :dots="false" :arrows="true">
       <div class="slider-img">
         <div class="gradient">

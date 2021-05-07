@@ -1,0 +1,22 @@
+@import "mixins";
+
+.wrapper {
+  @include container;
+  .main {
+    display: flex;
+    .banner {
+      margin: 18px auto;
+      width: 940px;
+      height: 120px;
+      border: 1px solid #d7d7d7;
+      background-color: white;
+    }
+    .banner-news {
+      margin: 19px auto;
+      width: 620px;
+      height: 120px;
+      border: 1px solid #d7d7d7;
+      background-color: white;
+    }
+  }
+}

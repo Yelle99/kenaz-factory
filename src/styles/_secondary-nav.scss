@@ -27,19 +27,19 @@ $border: 6px solid;
       color: white;
       padding: 10px 20px 16px 20px;
     }
-    .business {
+    .nav-business {
       border-bottom: $border $business;
     }
-    .sport {
+    .nav-sport {
       border-bottom: $border $sport;
     }
-    .life {
+    .nav-life {
       border-bottom: $border $life;
     }
-    .tech {
+    .nav-tech {
       border-bottom: $border $tech;
     }
-    .travel {
+    .nav-travel {
       border-bottom: $border $travel;
     }
   }

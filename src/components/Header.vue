@@ -18,12 +18,12 @@
       <div class="container-top">
         <nav class="secondary">
           <ul class="nav-links">
-            <li><a class="news" href="#">News</a></li>
-            <li><a class="business" href="#">Business</a></li>
-            <li><a class="sport" href="#">Sport</a></li>
-            <li><a class="life" href="#">Life</a></li>
-            <li><a class="tech" href="#">Tech</a></li>
-            <li><a class="travel" href="#">Travel</a></li>
+            <li><a class="nav-news" href="#">News</a></li>
+            <li><a class="nav-business" href="#">Business</a></li>
+            <li><a class="nav-sport" href="#">Sport</a></li>
+            <li><a class="nav-life" href="#">Life</a></li>
+            <li><a class="nav-tech" href="#">Tech</a></li>
+            <li><a class="nav-travel" href="#">Travel</a></li>
           </ul>
         </nav>
       </div>
