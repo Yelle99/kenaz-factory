@@ -1,0 +1,47 @@
+@import "mixins";
+
+.sidebar-article {
+  padding: 20px 33px;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  .sidebar-text {
+    width: 172px;
+    .sidebar-comments {
+      margin-right: 30px;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      color: #acb3ba;
+      @include VarelaRound;
+      font-size: 10px;
+      line-height: 12px;
+      img {
+        width: 11px;
+        height: 10px;
+        margin-right: 3px;
+      }
+    }
+    .sidebar-date {
+      @include VarelaRound;
+      font-size: 10px;
+      line-height: 12px;
+      color: #acb3ba;
+      margin-bottom: 5px;
+    }
+    .sidebar-heading {
+      @include BitterBold;
+      font-size: 14px;
+      line-height: 17px;
+      color: white;
+    }
+  }
+
+  .sidebar-img {
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 1, 0.3);
+  }
+}

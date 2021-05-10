@@ -5,10 +5,11 @@ $life: #5dcff3;
 $tech: #fcc44d;
 $travel: #a99765;
 
+@import "home";
 @import "primary-nav";
 @import "secondary-nav";
 @import "slider";
 @import "category-section";
 @import "single-article";
 @import "sidebar";
-@import "home";
+@import "sidebar-article";
