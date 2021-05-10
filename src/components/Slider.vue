@@ -1,50 +1,15 @@
 <template>
   <div class="slider-container">
     <VueSlickCarousel :dots="false" :arrows="true">
-      <div class="slider-img">
-        <div class="gradient">
-          <div class="text">
-            <div class="top-text">
-              <span class="date">August 26, 2013 </span>
-              <img class="comment" src="../assets/comment.svg" alt="" />
-              <span> 22 comments</span>
-            </div>
-            <h1>'Margot' breathlessly reimagines Anne Frank's sister</h1>
-          </div>
-          <button>Read Article</button>
-        </div>
-      </div>
-      <div class="slider-img">
-        <div class="gradient">
-          <div class="text">
-            <div class="top-text">
-              <span class="date">August 26, 2013 </span>
-              <img class="comment" src="../assets/comment.svg" alt="" />
-              <span> 22 comments</span>
-            </div>
-            <h1>'Margot' breathlessly reimagines Anne Frank's sister</h1>
-          </div>
-          <button>Read Article</button>
-        </div>
-      </div>
-      <div class="slider-img">
-        <div class="gradient">
-          <div class="text">
-            <div class="top-text">
-              <span class="date">August 26, 2013 </span>
-              <img class="comment" src="../assets/comment.svg" alt="" />
-              <span> 22 comments</span>
-            </div>
-            <h1>'Margot' breathlessly reimagines Anne Frank's sister</h1>
-          </div>
-          <button>Read Article</button>
-        </div>
+      <div :key="sliderNews.id" v-for="sliderNews in sliderNews">
+        <SingleSliderNews :sliderNews="sliderNews" />
       </div>
     </VueSlickCarousel>
   </div>
 </template>
 
 <script>
+import SingleSliderNews from "./SingleSliderNews";
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // carousel custom style
@@ -54,6 +19,31 @@ export default {
   name: "Slider",
   components: {
     VueSlickCarousel,
+    SingleSliderNews,
+  },
+  data() {
+    return {
+      sliderNews: [
+        {
+          id: 1,
+          date: "August 26, 2013",
+          comments: "22 comments",
+          heading: "'Margot' breathlessly reimagines Anne Frank's sister",
+        },
+        {
+          id: 2,
+          date: "August 26, 2013",
+          comments: "22 comments",
+          heading: "'Margot' breathlessly reimagines Anne Frank's sister",
+        },
+        {
+          id: 3,
+          date: "August 26, 2013",
+          comments: "22 comments",
+          heading: "'Margot' breathlessly reimagines Anne Frank's sister",
+        },
+      ],
+    };
   },
 };
 </script>

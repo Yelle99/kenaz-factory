@@ -1,5 +1,5 @@
 <template>
-  <aside>
+  <aside class="sidebar">
     <div class="btns">
       <button class="active">Popular</button>
       <button>Top Rated</button>

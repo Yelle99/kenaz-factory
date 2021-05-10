@@ -12,6 +12,7 @@ $border: 6px solid;
     @include container;
   }
   .nav-links {
+    height: 53px;
     @include BitterBold;
     display: flex;
     text-transform: uppercase;
@@ -26,6 +27,14 @@ $border: 6px solid;
       text-decoration: none;
       color: white;
       padding: 10px 20px 16px 20px;
+    }
+    .nav-news {
+      display: inline-block;
+      background-color: #299ec3;
+      padding: 15px 21px 14px 20px;
+      width: 96px;
+      height: 53px;
+      margin-top: -10px;
     }
     .nav-business {
       border-bottom: $border $business;

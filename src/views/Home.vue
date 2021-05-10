@@ -10,9 +10,7 @@
           <CategorySection border="sport-border" title="Sports" />
           <div class="banner-news"></div>
         </div>
-        <div class="side-content">
-          <Sidebar />
-        </div>
+        <SideContent />
       </div>
     </div>
   </div>
@@ -21,8 +19,8 @@
 <script>
 import Header from "../components/Header";
 import Slider from "../components/Slider";
+import SideContent from "../components/SideContent";
 import CategorySection from "../components/CategorySection";
-import Sidebar from "../components/Sidebar";
 
 export default {
   name: "Home",
@@ -30,7 +28,7 @@ export default {
     Header,
     Slider,
     CategorySection,
-    Sidebar,
+    SideContent,
   },
 };
 </script>
