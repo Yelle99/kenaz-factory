@@ -6,9 +6,18 @@
       <Slider />
       <div class="main">
         <div class="categories">
-          <CategorySection border="news-border" title="News" />
-          <CategorySection border="sport-border" title="Sports" />
+          <CategorySection border="news-border" title="News" :isNews="true" />
+          <CategorySection
+            border="sport-border"
+            title="Sports"
+            :isSports="true"
+          />
           <div class="banner-news"></div>
+          <CategorySection
+            border="business-border"
+            title="Business"
+            :isBusiness="true"
+          />
         </div>
         <SideContent />
       </div>

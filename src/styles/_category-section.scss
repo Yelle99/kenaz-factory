@@ -14,6 +14,9 @@ $border: 9px solid;
 .sport-border {
   border-left: $border $sport;
 }
+.business-border {
+  border-left: $border $business;
+}
 .heading {
   display: flex;
   justify-content: space-between;
@@ -35,7 +38,14 @@ $border: 9px solid;
   }
 }
 
-.news {
+.news,
+.sports {
   display: flex;
   gap: 20px;
+}
+
+.business {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }

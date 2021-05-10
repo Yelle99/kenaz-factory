@@ -1,10 +1,12 @@
 <template>
   <a href="#" class="news-article">
-    <img class="news-image" :src="require(`../assets/${news.image}`)" />
-    <p class="news-date">{{ news.date }}</p>
-    <h3 class="news-heading">
-      {{ news.heading }}
-    </h3>
+    <img class="news-image" :src="require(`../assets/${newsdata.image}`)" />
+    <div class="business-text">
+      <p class="news-date">{{ newsdata.date }}</p>
+      <h3 class="news-heading">
+        {{ newsdata.heading }}
+      </h3>
+    </div>
   </a>
 </template>
 
@@ -12,7 +14,7 @@
 export default {
   name: "SingleArticle",
   props: {
-    news: Object,
+    newsdata: Object,
   },
 };
 </script>
