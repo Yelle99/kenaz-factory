@@ -18,6 +18,7 @@
             title="Business"
             :isBusiness="true"
           />
+          <div class="banner-news"></div>
         </div>
         <SideContent />
       </div>
