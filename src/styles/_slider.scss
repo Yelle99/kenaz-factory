@@ -52,3 +52,30 @@
     }
   }
 }
+
+.prev-arrow-slider {
+  background-image: url("../assets/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  width: 36px;
+  height: 55px;
+  z-index: 999;
+  position: absolute;
+  left: 28px;
+  top: 177px;
+  cursor: pointer;
+}
+.next-arrow-slider {
+  background-image: url("../assets/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  width: 36px;
+  height: 55px;
+  z-index: 999;
+  position: absolute;
+  left: 875px;
+  top: 177px;
+  cursor: pointer;
+}

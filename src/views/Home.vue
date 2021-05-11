@@ -19,6 +19,17 @@
             :isBusiness="true"
           />
           <div class="banner-news"></div>
+          <CarouselSection :isDouble="true" border="carousel-news-border" />
+          <div class="single-carousels">
+            <CarouselSection
+              :isDouble="false"
+              border="carousel-travel-border"
+            />
+            <CarouselSection
+              :isDouble="false"
+              border="carousel-travel-border"
+            />
+          </div>
         </div>
         <SideContent />
       </div>
@@ -31,6 +42,7 @@ import Header from "../components/Header";
 import Slider from "../components/Slider";
 import SideContent from "../components/SideContent";
 import CategorySection from "../components/CategorySection";
+import CarouselSection from "../components/CarouselSection";
 
 export default {
   name: "Home",
@@ -39,6 +51,7 @@ export default {
     Slider,
     CategorySection,
     SideContent,
+    CarouselSection,
   },
 };
 </script>
