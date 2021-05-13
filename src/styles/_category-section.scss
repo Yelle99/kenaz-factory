@@ -7,6 +7,26 @@ $border: 9px solid;
   height: 325px;
   padding: 15px 32px 28px 30px;
   background-color: white;
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    h1 {
+      @include BitterBold;
+      font-size: 24px;
+      line-height: 30px;
+      color: #363f48;
+    }
+    a {
+      @include VarelaRound;
+      font-size: 14px;
+      line-height: 17px;
+      align-self: flex-end;
+      color: #3677b5;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(54, 119, 181, 0.3);
+    }
+  }
 }
 .news-border {
   border-left: $border $news;
@@ -17,29 +37,8 @@ $border: 9px solid;
 .business-border {
   border-left: $border $business;
 }
-.heading {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
-  h1 {
-    @include BitterBold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #363f48;
-  }
-  a {
-    @include VarelaRound;
-    font-size: 14px;
-    line-height: 17px;
-    align-self: flex-end;
-    color: #3677b5;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(54, 119, 181, 0.3);
-  }
-}
 
-.news,
-.sports {
+.news {
   display: flex;
   gap: 20px;
 }

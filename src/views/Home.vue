@@ -6,33 +6,47 @@
       <Slider />
       <div class="main">
         <div class="categories">
-          <CategorySection border="news-border" title="News" :isNews="true" />
+          <CategorySection
+            border="news-border"
+            title="News"
+            newsType="allnews"
+          />
           <CategorySection
             border="sport-border"
-            title="Sports"
-            :isSports="true"
+            title="Sport"
+            newsType="sport"
           />
           <div class="banner-news"></div>
           <CategorySection
             border="business-border"
             title="Business"
+            newsType="business"
             :isBusiness="true"
           />
           <div class="banner-news"></div>
-          <CarouselSection :isDouble="true" border="carousel-news-border" />
+          <CarouselSection
+            :isDouble="true"
+            border="carousel-news-border"
+            newsType="carouselnews"
+          />
           <div class="single-carousels">
             <CarouselSection
               :isDouble="false"
               border="carousel-travel-border"
+              newsType="editorials"
             />
             <CarouselSection
               :isDouble="false"
               border="carousel-travel-border"
+              newsType="localnews"
             />
           </div>
         </div>
         <SideContent />
       </div>
+      <div class="banner"></div>
+      <ImageCarousel />
+      <Footer />
     </div>
   </div>
 </template>
@@ -43,6 +57,8 @@ import Slider from "../components/Slider";
 import SideContent from "../components/SideContent";
 import CategorySection from "../components/CategorySection";
 import CarouselSection from "../components/CarouselSection";
+import ImageCarousel from "../components/ImageCarousel";
+import Footer from "../components/Footer";
 
 export default {
   name: "Home",
@@ -52,6 +68,8 @@ export default {
     CategorySection,
     SideContent,
     CarouselSection,
+    ImageCarousel,
+    Footer,
   },
 };
 </script>

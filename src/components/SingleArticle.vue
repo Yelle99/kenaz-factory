@@ -2,7 +2,8 @@
   <a href="#" class="news-article">
     <img class="news-image" :src="require(`../assets/${newsdata.image}`)" />
     <div class="business-text">
-      <p class="news-date">{{ newsdata.date }}</p>
+      <span class="news-date">{{ newsdata.date }}</span>
+      <span class="news-num">{{ newsdata.num }}</span>
       <h3 class="news-heading">
         {{ newsdata.heading }}
       </h3>

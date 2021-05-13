@@ -46,36 +46,103 @@ export default {
   props: {
     border: String,
     isDouble: Boolean,
+    newsType: String,
   },
   data() {
     return {
-      carouselnews: [
-        {
-          id: 1,
-          image: "newsimage.png",
-          date: "August 26, 2013",
-          heading: "For Obama, MLK's shadow looms large ahead of speech",
-        },
-        {
-          id: 2,
-          image: "newsimage.png",
-          date: "August 26, 2013",
-          heading: "NASA releases portrait of a planet waving at Saturn",
-        },
-        {
-          id: 3,
-          image: "newsimage.png",
-          date: "August 26, 2013",
-          heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
-        },
-        {
-          id: 4,
-          image: "newsimage.png",
-          date: "August 26, 2013",
-          heading: "Palestinians call off peace talks after clash",
-        },
-      ],
+      carouselnews: [],
     };
+  },
+  methods: {
+    getData(category) {
+      if (category == "carouselnews") {
+        this.carouselnews = [
+          {
+            id: 1,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "For Obama, MLK's shadow looms large ahead of speech",
+          },
+          {
+            id: 2,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "NASA releases portrait of a planet waving at Saturn",
+          },
+          {
+            id: 3,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
+          },
+          {
+            id: 4,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "Palestinians call off peace talks after clash",
+          },
+        ];
+      }
+      if (category == "editorials") {
+        this.carouselnews = [
+          {
+            id: 1,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "For Obama, MLK's shadow looms large ahead of speech",
+          },
+          {
+            id: 2,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "NASA releases portrait of a planet waving at Saturn",
+          },
+          {
+            id: 3,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
+          },
+          {
+            id: 4,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "Palestinians call off peace talks after clash",
+          },
+        ];
+      }
+      if (category == "localnews") {
+        this.carouselnews = [
+          {
+            id: 1,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "For Obama, MLK's shadow looms large ahead of speech",
+          },
+          {
+            id: 2,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "NASA releases portrait of a planet waving at Saturn",
+          },
+          {
+            id: 3,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
+          },
+          {
+            id: 4,
+            image: "newsimage.png",
+            date: "August 26, 2013",
+            heading: "Palestinians call off peace talks after clash",
+          },
+        ];
+      }
+    },
+  },
+  beforeMount() {
+    this.getData(this.newsType);
   },
 };
 </script>
