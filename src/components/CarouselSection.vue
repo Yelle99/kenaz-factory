@@ -5,7 +5,7 @@
       isDouble ? 'carouselsection-double' : 'carouselsection-single',
     ]"
   >
-    <h1>News Carousel</h1>
+    <h1>{{ title }}</h1>
     <VueSlickCarousel
       :slidesToShow="isDouble ? 2 : 1"
       :dots="false"
@@ -47,6 +47,7 @@ export default {
     border: String,
     isDouble: Boolean,
     newsType: String,
+    title: String,
   },
   data() {
     return {

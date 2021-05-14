@@ -25,17 +25,20 @@
           />
           <div class="banner-news"></div>
           <CarouselSection
+            title="News Carousel"
             :isDouble="true"
             border="carousel-news-border"
             newsType="carouselnews"
           />
           <div class="single-carousels">
             <CarouselSection
+              title="Editorials"
               :isDouble="false"
               border="carousel-travel-border"
               newsType="editorials"
             />
             <CarouselSection
+              title="Local News"
               :isDouble="false"
               border="carousel-travel-border"
               newsType="localnews"
@@ -46,8 +49,8 @@
       </div>
       <div class="banner"></div>
       <ImageCarousel />
-      <Footer />
     </div>
+    <Footer />
   </div>
 </template>
 

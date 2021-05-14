@@ -12,3 +12,9 @@
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
 }
+
+@mixin icons-size {
+  width: 38px;
+  height: 38px;
+  margin-right: 6px;
+}
