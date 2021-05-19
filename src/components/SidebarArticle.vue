@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class="sidebar-article">
+  <router-link to="/single" tag="article" class="sidebar-article">
     <div class="sidebar-text">
       <p class="sidebar-comments">
         <img class="comment" src="../assets/comment.svg" alt="" />{{
@@ -12,7 +12,7 @@
       </h3>
     </div>
     <img class="sidebar-img" :src="require(`../assets/${sidebarNews.image}`)" />
-  </a>
+  </router-link>
 </template>
 
 <script>

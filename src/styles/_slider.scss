@@ -1,7 +1,7 @@
 @import "mixins";
 
 .slider-img {
-  width: 940px;
+  max-width: 940px;
   height: 425px;
   background-image: url("../assets/sliderimg.png");
   background-repeat: no-repeat;
@@ -62,8 +62,8 @@
   height: 55px;
   z-index: 999;
   position: absolute;
-  left: 28px;
-  top: 177px;
+  left: 3%;
+  top: 40%;
   cursor: pointer;
 }
 .next-arrow-slider {
@@ -75,7 +75,7 @@
   height: 55px;
   z-index: 999;
   position: absolute;
-  left: 875px;
-  top: 177px;
+  right: 3%;
+  top: 40%;
   cursor: pointer;
 }

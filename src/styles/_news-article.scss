@@ -1,0 +1,64 @@
+@import "mixins";
+
+.categorynews {
+  height: 404px;
+  padding: 24px 18px 0 31px;
+  border-bottom: 1px solid #dddddd;
+  .categorynews-heading {
+    @include BitterBold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #363f48;
+    padding-bottom: 16px;
+    width: 496px;
+  }
+  .categorynews_top-text {
+    display: flex;
+    justify-content: space-between;
+    width: 383px;
+    @include VarelaRound;
+    font-size: 12px;
+    line-height: 14.5px;
+    color: #666666;
+    padding-bottom: 7px;
+    .categorynews-date {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img {
+        padding-right: 4px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+  .categorynews-content {
+    display: flex;
+    gap: 20px;
+    p {
+      font-family: "Bitter", serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #444444;
+    }
+    img {
+      width: 170px;
+      height: 128px;
+      margin-top: 9px;
+    }
+  }
+  .read-article {
+    border: none;
+    background-color: #4d4382;
+    width: 123px;
+    height: 33px;
+    @include VarelaRound;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 190px;
+    margin-top: 16px;
+    margin-bottom: 62px;
+  }
+}

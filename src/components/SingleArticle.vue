@@ -1,5 +1,5 @@
 <template>
-  <a href="#" class="news-article">
+  <router-link to="/single" tag="article" class="news-article">
     <img class="news-image" :src="require(`../assets/${newsdata.image}`)" />
     <div class="business-text">
       <span class="news-date">{{ newsdata.date }}</span>
@@ -8,7 +8,7 @@
         {{ newsdata.heading }}
       </h3>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>

@@ -74,7 +74,7 @@ export default {
             id: 3,
             image: "newsimage.png",
             date: "August 26, 2013",
-            heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
+            heading: "Patriotsvv make cuts... and Tim Tebow survives (so far)",
           },
           {
             id: 4,
@@ -102,7 +102,7 @@ export default {
             id: 3,
             image: "newsimage.png",
             date: "August 26, 2013",
-            heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
+            heading: "Patriotsvv make cuts... and Tim Tebow survives (so far)",
           },
           {
             id: 4,
@@ -130,7 +130,7 @@ export default {
             id: 3,
             image: "newsimage.png",
             date: "August 26, 2013",
-            heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
+            heading: "Patriotsvv make cuts... and Tim Tebow survives (so far)",
           },
           {
             id: 4,

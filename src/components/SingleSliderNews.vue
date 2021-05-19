@@ -9,7 +9,7 @@
         </div>
         <h1>{{ sliderNews.heading }}</h1>
       </div>
-      <button>Read Article</button>
+      <router-link to="/single" tag="button">Read Article</router-link>
     </div>
   </div>
 </template>

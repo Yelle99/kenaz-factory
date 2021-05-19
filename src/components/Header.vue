@@ -18,7 +18,7 @@
       <div class="container-top">
         <nav class="secondary">
           <ul class="nav-links">
-            <li><a class="nav-news" href="#">News</a></li>
+            <li><router-link class="nav-news" to="/">News</router-link></li>
             <li><a class="nav-business" href="#">Business</a></li>
             <li><a class="nav-sport" href="#">Sport</a></li>
             <li><a class="nav-life" href="#">Life</a></li>

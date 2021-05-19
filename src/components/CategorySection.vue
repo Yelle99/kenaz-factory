@@ -2,7 +2,7 @@
   <section :class="['category', border]">
     <div class="heading">
       <h1>{{ title }}</h1>
-      <a href="#">See all</a>
+      <router-link to="/category">See all</router-link>
     </div>
     <div :class="[isBusiness ? 'business' : 'news']">
       <div :key="news.id" v-for="news in news">
@@ -53,7 +53,7 @@ export default {
             id: 3,
             image: "newsimage.png",
             date: "August 26, 2013",
-            heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
+            heading: "Patriotsvv make cuts... and Tim Tebow survives (so far)",
             num: "5",
           },
         ];
@@ -76,7 +76,7 @@ export default {
             id: 3,
             image: "newsimage.png",
             date: "August 26, 2013",
-            heading: "Patriotsvv make cuts... and Tim Tebrov survives (so far)",
+            heading: "Patriotsvv make cuts... and Tim Tebow survives (so far)",
           },
         ];
       }
