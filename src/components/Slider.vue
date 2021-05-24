@@ -1,8 +1,8 @@
 <template>
   <div class="slider-container">
     <VueSlickCarousel :dots="false" :arrows="true">
-      <div :key="sliderNews.id" v-for="sliderNews in sliderNews">
-        <SingleSliderNews :sliderNews="sliderNews" />
+      <div :key="singleSliderNews.id" v-for="singleSliderNews in sliderNews">
+        <SingleSliderNews :sliderNews="singleSliderNews" />
       </div>
       <template #prevArrow="arrowOption">
         <div class="prev-arrow-slider">
@@ -21,9 +21,6 @@
 <script>
 import SingleSliderNews from "./SingleSliderNews";
 import VueSlickCarousel from "vue-slick-carousel";
-// import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// // carousel custom style
-// import "vue-slick-carousel/dist/custom-theme.css";
 
 export default {
   name: "Slider",

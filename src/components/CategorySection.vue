@@ -5,8 +5,8 @@
       <router-link to="/category">See all</router-link>
     </div>
     <div :class="[isBusiness ? 'business' : 'news']">
-      <div :key="news.id" v-for="news in news">
-        <SingleArticle :newsdata="news" />
+      <div :key="singlenews.id" v-for="singlenews in news">
+        <SingleArticle :newsdata="singlenews" />
       </div>
     </div>
   </section>

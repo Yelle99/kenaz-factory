@@ -1,0 +1,39 @@
+@media screen and (max-width: 940px) {
+  .main {
+    max-width: 768px;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+  .categories {
+    max-width: 60%;
+  }
+  .category {
+    height: auto;
+    .news {
+      flex-direction: column;
+      margin-left: 100px;
+      .news-heading {
+        width: 170px;
+      }
+    }
+  }
+  .side-content {
+    max-width: 40%;
+  }
+  .bottom-slider {
+    max-width: 100%;
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  footer {
+    padding-left: 10px;
+    .icons {
+      padding-bottom: 50px;
+    }
+    .tags {
+      padding-bottom: 15px;
+    }
+  }
+}

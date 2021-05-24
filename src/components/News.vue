@@ -2,8 +2,11 @@
   <div>
     <section class="all-news">
       <h1>News</h1>
-      <div :key="categoryNews.id" v-for="categoryNews in categoryNews">
-        <NewsArticle :newsdata="categoryNews" />
+      <div
+        :key="singleCategoryNews.id"
+        v-for="singleCategoryNews in categoryNews"
+      >
+        <NewsArticle :newsdata="singleCategoryNews" />
       </div>
       <div class="pages">
         <button class="selected">1</button>

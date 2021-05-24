@@ -1,9 +1,13 @@
 @import "mixins";
+@import "variables";
 $border: 9px solid;
 
+.categories {
+  max-width: 100%;
+}
 .category {
   margin-top: 19px;
-  max-width: 630px;
+  max-width: 100%;
   height: 325px;
   padding: 15px 32px 28px 30px;
   background-color: white;
@@ -27,6 +31,11 @@ $border: 9px solid;
       border-bottom: 1px solid rgba(54, 119, 181, 0.3);
     }
   }
+  .news {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 .news-border {
   border-left: $border $news;
@@ -36,11 +45,6 @@ $border: 9px solid;
 }
 .business-border {
   border-left: $border $business;
-}
-
-.news {
-  display: flex;
-  gap: 20px;
 }
 
 .business {

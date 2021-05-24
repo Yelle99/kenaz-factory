@@ -1,8 +1,8 @@
 <template>
   <footer>
-    <div class="container">
+    <div class="footer-container">
       <div class="top-footer">
-        <div class="first-row">
+        <div class="featured-row">
           <div class="logo">
             <img src="../assets/logo-blue.svg" alt="" />
             <h1>Kenaz</h1>
@@ -26,7 +26,7 @@
           </div>
           <FooterNews footerHeading="Featured" newsType="featured" />
         </div>
-        <div class="second-row">
+        <div class="newsletter-row">
           <h1 class="heading">Newsletter</h1>
           <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
@@ -42,7 +42,7 @@
           </form>
           <FooterNews footerHeading="Random Posts" newsType="randomposts" />
         </div>
-        <div class="third-row">
+        <div class="tags-row">
           <h1 class="heading">Tags Widget</h1>
           <div class="tags">
             <span>assueverit</span>

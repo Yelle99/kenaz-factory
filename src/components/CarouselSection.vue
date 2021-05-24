@@ -13,10 +13,10 @@
     >
       <div
         class="carousel-news"
-        :key="carouselnews.id"
-        v-for="carouselnews in carouselnews"
+        :key="singleCarouselnews.id"
+        v-for="singleCarouselnews in carouselnews"
       >
-        <SingleArticle :newsdata="carouselnews" />
+        <SingleArticle :newsdata="singleCarouselnews" />
       </div>
       <template #prevArrow="arrowOption">
         <div class="prev-arrow">

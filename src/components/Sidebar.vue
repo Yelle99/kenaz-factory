@@ -8,10 +8,10 @@
     <div class="sidebar-news">
       <article
         class="article-container"
-        :key="sidebarNews.id"
-        v-for="sidebarNews in sidebarNews"
+        :key="singleSidebarNews.id"
+        v-for="singleSidebarNews in sidebarNews"
       >
-        <SidebarArticle :sidebarNews="sidebarNews" />
+        <SidebarArticle :sidebarNews="singleSidebarNews" />
       </article>
     </div>
   </aside>
