@@ -32,7 +32,7 @@
     </div>
     <div class="bottom-slider">
       <VueSlickCarousel
-        :slidesToShow="7"
+        :slidesToShow="numberOfSlides"
         ref="c2"
         :asNavFor="c1"
         :focusOnSelect="true"
@@ -57,6 +57,7 @@ import VueSlickCarousel from "vue-slick-carousel";
 export default {
   name: "ImageCarousel",
   data: () => ({
+    numberOfSlides: 7,
     showMagnifier: true,
     images: [
       "img1.jpg",
@@ -72,6 +73,32 @@ export default {
     c2: undefined,
   }),
   methods: {
+    handleResize() {
+      if (window.innerWidth < 686) {
+        this.numberOfSlides = 6;
+      }
+      if (window.innerWidth > 686) {
+        this.numberOfSlides = 7;
+      }
+      if (window.innerWidth < 600) {
+        this.numberOfSlides = 5;
+      }
+      if (window.innerWidth > 600 && window.innerWidth < 686) {
+        this.numberOfSlides = 6;
+      }
+      if (window.innerWidth < 504) {
+        this.numberOfSlides = 4;
+      }
+      if (window.innerWidth > 504 && window.innerWidth < 600) {
+        this.numberOfSlides = 5;
+      }
+      if (window.innerWidth < 408) {
+        this.numberOfSlides = 3;
+      }
+      if (window.innerWidth > 408 && window.innerWidth < 504) {
+        this.numberOfSlides = 4;
+      }
+    },
     openFullscreen() {
       let image = event.target.nextSibling;
       let imageDiv = document.querySelector(".fullscreen-image");
@@ -93,9 +120,39 @@ export default {
   mounted() {
     this.c1 = this.$refs.c1;
     this.c2 = this.$refs.c2;
+    if (window.innerWidth < 686) {
+      this.numberOfSlides = 6;
+    }
+    if (window.innerWidth > 686) {
+      this.numberOfSlides = 7;
+    }
+    if (window.innerWidth < 600) {
+      this.numberOfSlides = 5;
+    }
+    if (window.innerWidth > 600 && window.innerWidth < 686) {
+      this.numberOfSlides = 6;
+    }
+    if (window.innerWidth < 504) {
+      this.numberOfSlides = 4;
+    }
+    if (window.innerWidth > 504 && window.innerWidth < 600) {
+      this.numberOfSlides = 5;
+    }
+    if (window.innerWidth < 408) {
+      this.numberOfSlides = 3;
+    }
+    if (window.innerWidth > 408 && window.innerWidth < 504) {
+      this.numberOfSlides = 4;
+    }
   },
   components: {
     VueSlickCarousel,
+  },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
   },
 };
 </script>

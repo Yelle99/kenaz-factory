@@ -12,17 +12,17 @@
             fugit vel!
           </p>
           <div class="icons">
-            <div class="wifi"></div>
-            <div class="facebook">
+            <div class="wifi icon"></div>
+            <div class="facebook icon">
               <img src="../assets/icon2.svg" alt="" />
             </div>
-            <div class="twitter">
+            <div class="twitter icon">
               <img src="../assets/icon3.svg" alt="" />
             </div>
-            <div class="ball"></div>
-            <div class="empty"></div>
-            <div class="youtube"></div>
-            <div class="skype"></div>
+            <div class="ball icon"></div>
+            <div class="empty icon"></div>
+            <div class="youtube icon"></div>
+            <div class="skype icon"></div>
           </div>
           <FooterNews footerHeading="Featured" newsType="featured" />
         </div>

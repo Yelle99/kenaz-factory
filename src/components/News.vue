@@ -1,28 +1,25 @@
 <template>
-  <div>
-    <section class="all-news">
-      <h1>News</h1>
-      <div
-        :key="singleCategoryNews.id"
-        v-for="singleCategoryNews in categoryNews"
-      >
-        <NewsArticle :newsdata="singleCategoryNews" />
-      </div>
-      <div class="pages">
-        <button class="selected">1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>10</button>
-      </div>
-    </section>
-    <div class="banner-news"></div>
-  </div>
+  <section class="all-news">
+    <h1>News</h1>
+    <div
+      :key="singleCategoryNews.id"
+      v-for="singleCategoryNews in categoryNews"
+    >
+      <NewsArticle :newsdata="singleCategoryNews" />
+    </div>
+    <div class="pages">
+      <button class="selected">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>10</button>
+    </div>
+  </section>
 </template>
 
 <script>

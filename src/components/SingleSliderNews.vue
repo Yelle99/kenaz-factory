@@ -7,7 +7,7 @@
           <img class="comment" src="../assets/comment.svg" alt="" />
           <span> {{ sliderNews.comments }}</span>
         </div>
-        <h1>{{ sliderNews.heading }}</h1>
+        <h1 class="slider-heading">{{ sliderNews.heading }}</h1>
       </div>
       <router-link to="/single" tag="button">Read Article</router-link>
     </div>

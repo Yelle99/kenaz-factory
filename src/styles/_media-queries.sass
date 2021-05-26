@@ -1,7 +1,8 @@
 @media screen and (max-width: 940px)
+  // home page
   .main
-    max-width: 768px
-    justify-content: space-between
+    // max-width: 768px
+    // justify-content: space-between
     margin-left: 10px
 
   .categories
@@ -12,10 +13,20 @@
 
     .news
       flex-direction: column
-      margin-left: 100px
+      margin-left: 20%
+
+      .news-article
+        width: 230px
 
       .news-heading
-        width: 170px
+        width: 230px
+
+      .news-image
+        width: 230px
+        height: auto
+
+      .news-num
+        padding-left: 115px
 
   .side-content
     max-width: 40%
@@ -31,7 +42,27 @@
     padding-left: 10px
 
     .icons
-      padding-bottom: 50px
+      padding-bottom: 53px
 
     .tags
-      padding-bottom: 15px
+      padding-bottom: 20px
+
+  .fullscreen-image
+    img
+      margin: 25px auto
+      display: block
+      height: 500px
+      margin-top: 70px
+
+  .icon 
+    +icons-size--responsive
+
+  // category page
+  .main-categorypage
+    max-width: 768px
+    justify-content: space-between
+    margin-left: 10px
+    .all-news
+      max-width: 70%
+    // .side-content
+    //   max-width: 30%

@@ -7,7 +7,7 @@
   >
     <h1>{{ title }}</h1>
     <VueSlickCarousel
-      :slidesToShow="isDouble ? 2 : 1"
+      :slidesToShow="isDouble && windowSize ? 2 : 1"
       :dots="false"
       :arrows="true"
     >
@@ -51,10 +51,19 @@ export default {
   },
   data() {
     return {
+      windowSize: true,
       carouselnews: [],
     };
   },
   methods: {
+    handleResize() {
+      if (window.innerWidth < 640) {
+        this.windowSize = false;
+      }
+      if (window.innerWidth > 640) {
+        this.windowSize = true;
+      }
+    },
     getData(category) {
       if (category == "carouselnews") {
         this.carouselnews = [
@@ -144,6 +153,20 @@ export default {
   },
   beforeMount() {
     this.getData(this.newsType);
+  },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  mounted() {
+    if (window.innerWidth < 640) {
+      this.windowSize = false;
+    }
+    if (window.innerWidth > 640) {
+      this.windowSize = true;
+    }
   },
 };
 </script>

@@ -4,7 +4,7 @@
     <div class="wrapper">
       <div class="banner"></div>
       <Slider />
-      <div class="main">
+      <div class="main-categorypage">
         <News />
         <SideContent />
       </div>

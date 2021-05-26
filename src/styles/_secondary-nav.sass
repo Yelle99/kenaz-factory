@@ -11,7 +11,21 @@ $border: 6px solid
   .container-top
     +container
 
-  .nav-links
+  .burger 
+    display: none
+    cursor: pointer
+    height: 30px
+    width: 30px
+    margin-top: 15px
+    margin-left: auto
+
+  .burger div 
+    width: 30px
+    height: 4px
+    background-color: rgb(219, 219, 219)
+    margin: 5px
+
+  .secondary-nav-links
     height: 53px
     +BitterBold
     display: flex
@@ -28,6 +42,9 @@ $border: 6px solid
       text-decoration: none
       color: white
       padding: 10px 22px 16px 22px
+
+    .close-nav
+      display: none
 
     .nav-news
       display: inline-block
@@ -51,3 +68,41 @@ $border: 6px solid
 
     .nav-travel
       border-bottom: $border $travel
+
+
+@media screen and (max-width: 775px)
+  .secondary__nav
+    height: 65px
+
+    .secondary
+      height: 65px
+      padding-right: 20px
+
+    .secondary-nav-links 
+        visibility: hidden
+        position: absolute
+        top: 0
+        right: 0px
+        height: 100vh
+        background-color: #4d4382
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        z-index: 1000
+
+        .close-nav
+          position: absolute
+          top: 20px
+          right: 25px
+          color: #f1f1f1
+          font-size: 50px
+          font-weight: bold
+          cursor: pointer
+
+        .nav-news
+          background-color: transparent
+          border-bottom: $border #299ec3
+    
+    .burger
+      display: block

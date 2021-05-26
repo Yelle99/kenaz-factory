@@ -1,17 +1,20 @@
 .primary__nav
-  height: 53px
+  min-height: 53px
   background-color: #252525
 
   .container-top
     +container
 
   .primary
-    height: 53px
+    min-height: 53px
     display: flex
     align-items: center
     color: white
 
     .logo
+      display: flex
+
+    .logo-img
       padding: 15px 26px 17px 23px
       background-color: #353333
 
@@ -41,3 +44,21 @@
         text-decoration: none
         color: white
         padding: 0px 20px 0 20px
+
+@media screen and (max-width: 775px)
+  .primary
+    flex-direction: column
+    height: 178px
+
+    .logo-img
+      background-color: transparent !important
+
+    .nav-links
+      justify-content: space-around !important
+      font-size: 16px !important
+      margin-top: 25px
+
+    .search-icon
+      align-self: flex-end
+      margin-top: 15px
+      
