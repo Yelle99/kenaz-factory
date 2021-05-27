@@ -13,7 +13,7 @@
         Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna
         mollis ornare vel eu leo.
       </p>
-      <img src="../assets/notebook.png" alt="" />
+      <img class="singlenews-img" src="../assets/notebook.png" alt="" />
       <p class="single-text">
         Molestias ultricies, ante quam urna ut volutpat, egestas dolor dui, nec
         hac ultrices nulla non netus. Placerat vehicula donec non suscipit

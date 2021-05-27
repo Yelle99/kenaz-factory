@@ -30,8 +30,8 @@
 .text-content
   margin-top: 19px
   background-color: #ffffff
-  height: 953px
-  width: 622px
+  min-height: 953px
+  max-width: 622px
 
   .single-text
     font-family: "Bitter", serif
@@ -42,10 +42,14 @@
     padding: 37px 20px 42px 30px
 
 .author
-  width: 622px
-  height: 222px
+  max-width: 622px
+  min-height: 222px
   background-color: #ffffff
   padding: 18px 26px 40px 31px
+
+  img
+    max-width: 100%
+    max-height: 110px
 
   h1
     +BitterBold
@@ -66,7 +70,7 @@
       width: 430px
 
 .comments
-  width: 622px
+  max-width: 622px
   background-color: #ffffff
   margin-top: 18px
   padding: 15px 30px 30px 30px
@@ -179,3 +183,37 @@
         color: #ffffff
         margin-top: 10px
         cursor: pointer
+
+
+@media screen and (max-width: 930px)
+  .singlenews
+    max-width: 60%
+
+  .singlenews-img
+    max-width: 100% !important
+
+  .comment-input
+    max-width: 90%
+    min-width: 303px
+
+  .side-content
+    max-width: 40%
+
+@media screen and (max-width: 700px)
+  .singlenews
+    max-width: 100%
+
+  .single-heading
+    font-size: 30px !important
+    line-height: 40px !important
+
+  .text-heading
+    bottom: 0px !important
+
+@media screen and (max-width: 490px)
+  .single-date
+    color: white !important
+
+  .single-heading
+    font-size: 20px !important
+    line-height: 25px !important
