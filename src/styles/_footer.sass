@@ -185,22 +185,35 @@ footer
   background-color: #252525
 
 
-  @media screen and (max-width: 600px)
-    .info-row
-      flex-direction: column
-
-    .news-row
-      flex-direction: column
+@media screen and (max-width: 940px)
+  footer
+    padding-left: 10px
 
     .icons
-      margin-bottom: 10px !important
+      padding-bottom: 53px
 
-    .kenaz-column, .newsletter-column, .tags-column    
-      width: 100% !important
-      margin: 0 auto
+    .tags
+      padding-bottom: 20px
 
-    .featured-column, .random-column, .twitter-column
-      width: 100% !important
+  .icon 
+    +icons-size--responsive  
+
+@media screen and (max-width: 600px)
+  .info-row
+    flex-direction: column
+
+  .news-row
+    flex-direction: column
+
+  .icons
+    margin-bottom: 10px !important
+
+  .kenaz-column, .newsletter-column, .tags-column    
+    width: 100% !important
+    margin: 0 auto
+
+  .featured-column, .random-column, .twitter-column
+    width: 100% !important
 
 @media screen and (max-width: 400px)
   .bottom-footer

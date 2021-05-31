@@ -46,24 +46,31 @@
 <script>
 export default {
   name: "Header",
-  data() {
-    return {
-      showNav: false,
-    };
-  },
   methods: {
     openNav() {
       let nav = document.querySelector(".secondary-nav-links");
       let closeNav = document.querySelector(".close-nav");
-      closeNav.style.display = "block";
       nav.style.visibility = "visible";
+      if (window.innerWidth < 775) {
+        closeNav.style.display = "block";
+      }
     },
     closeNav() {
-      let nav = document.querySelector(".secondary-nav-links");
-      let closeNav = document.querySelector(".close-nav");
-      closeNav.style.display = "none";
-      nav.style.visibility = "hidden";
+      if (window.innerWidth < 775) {
+        let nav = document.querySelector(".secondary-nav-links");
+        let closeNav = document.querySelector(".close-nav");
+        closeNav.style.display = "none";
+        nav.style.visibility = "hidden";
+      }
     },
+    showNavOnResize() {
+      if (window.innerWidth > 775) {
+        this.openNav();
+      }
+    },
+  },
+  created() {
+    window.addEventListener("resize", this.showNavOnResize);
   },
 };
 </script>

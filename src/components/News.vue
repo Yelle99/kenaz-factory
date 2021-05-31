@@ -5,7 +5,7 @@
       :key="singleCategoryNews.id"
       v-for="singleCategoryNews in categoryNews"
     >
-      <NewsArticle :newsdata="singleCategoryNews" />
+      <NewsArticle :newsData="singleCategoryNews" />
     </div>
     <div class="pages">
       <button class="selected">1</button>

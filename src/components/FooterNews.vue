@@ -4,17 +4,17 @@
     <div class="footer-news">
       <article
         class="footer-article"
-        :key="footernews.id"
-        v-for="footernews in footernews"
+        :key="footerNews.id"
+        v-for="footerNews in footerNews"
       >
         <div class="footer-text">
-          <p class="footer-date">{{ footernews.date }}</p>
-          <p class="footer-num">{{ footernews.num }}</p>
-          <h3 class="footer-heading">{{ footernews.heading }}</h3>
+          <p class="footer-date">{{ footerNews.date }}</p>
+          <p class="footer-num">{{ footerNews.num }}</p>
+          <h3 class="footer-heading">{{ footerNews.heading }}</h3>
         </div>
         <img
           class="footer-img"
-          :src="require(`../assets/${footernews.image}`)"
+          :src="require(`../assets/${footerNews.image}`)"
           alt=""
         />
       </article>
@@ -31,13 +31,13 @@ export default {
   },
   data() {
     return {
-      footernews: [],
+      footerNews: [],
     };
   },
   methods: {
     getFooterData(category) {
       if (category == "featured") {
-        this.footernews = [
+        this.footerNews = [
           {
             id: 1,
             image: "footerimage.png",
@@ -62,7 +62,7 @@ export default {
         ];
       }
       if (category == "randomposts") {
-        this.footernews = [
+        this.footerNews = [
           {
             id: 1,
             image: "footerimage.png",

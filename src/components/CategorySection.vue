@@ -6,7 +6,7 @@
     </div>
     <div :class="[isBusiness ? 'business' : 'news']">
       <div :key="singleNews.id" v-for="singleNews in news">
-        <SingleArticle :newsdata="singleNews" />
+        <SingleArticle :newsData="singleNews" />
       </div>
     </div>
   </section>
@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     getData(category) {
-      if (category == "allnews") {
+      if (category == "all-news") {
         this.news = [
           {
             id: 1,

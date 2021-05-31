@@ -1,11 +1,11 @@
 <template>
   <router-link to="/single" tag="article" class="news-article">
-    <img class="news-image" :src="require(`../assets/${newsdata.image}`)" />
+    <img class="news-image" :src="require(`../assets/${newsData.image}`)" />
     <div class="business-text">
-      <span class="news-date">{{ newsdata.date }}</span>
-      <span class="news-num">{{ newsdata.num }}</span>
+      <span class="news-date">{{ newsData.date }}</span>
+      <span class="news-num">{{ newsData.num }}</span>
       <h3 class="news-heading">
-        {{ newsdata.heading }}
+        {{ newsData.heading }}
       </h3>
     </div>
   </router-link>
@@ -15,7 +15,7 @@
 export default {
   name: "SingleArticle",
   props: {
-    newsdata: Object,
+    newsData: Object,
   },
 };
 </script>

@@ -13,10 +13,10 @@
     >
       <div
         class="carousel-news"
-        :key="singleCarouselnews.id"
-        v-for="singleCarouselnews in carouselnews"
+        :key="singleCarouselNews.id"
+        v-for="singleCarouselNews in carouselNews"
       >
-        <SingleArticle :newsdata="singleCarouselnews" />
+        <SingleArticle :newsData="singleCarouselNews" />
       </div>
       <template #prevArrow="arrowOption">
         <div class="prev-arrow">
@@ -52,7 +52,7 @@ export default {
   data() {
     return {
       windowSize: true,
-      carouselnews: [],
+      carouselNews: [],
     };
   },
   methods: {
@@ -66,7 +66,7 @@ export default {
     },
     getData(category) {
       if (category == "carouselnews") {
-        this.carouselnews = [
+        this.carouselNews = [
           {
             id: 1,
             image: "newsimage.png",
@@ -94,7 +94,7 @@ export default {
         ];
       }
       if (category == "editorials") {
-        this.carouselnews = [
+        this.carouselNews = [
           {
             id: 1,
             image: "newsimage.png",
@@ -122,7 +122,7 @@ export default {
         ];
       }
       if (category == "localnews") {
-        this.carouselnews = [
+        this.carouselNews = [
           {
             id: 1,
             image: "newsimage.png",

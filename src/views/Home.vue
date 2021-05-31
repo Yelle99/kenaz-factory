@@ -9,7 +9,7 @@
           <CategorySection
             border="news-border"
             title="News"
-            newsType="allnews"
+            newsType="all-news"
           />
           <CategorySection
             border="sport-border"
